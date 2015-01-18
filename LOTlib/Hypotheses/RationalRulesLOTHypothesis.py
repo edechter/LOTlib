@@ -62,9 +62,9 @@ class RationalRulesLOTHypothesis(LOTHypothesis):
         LOTHypothesis.__init__(self, grammar, value=value, *args, **kwargs)
 
 
-    def __copy__(self):
+    def __copy__(self, **kwargs):
         """
-                Return a copy of myself.
+                Return a copy of myself. Replaces superclass definition. 
         """
 
         # Since this is inherited, call the constructor on everything, copying what should be copied
