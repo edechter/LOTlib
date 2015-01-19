@@ -16,7 +16,7 @@ class MCMCSummary:
         count (int): Number of samples taken as input to `add`; this is different from `sample_count`.
 
     Example:
-        >> summary = InferenceSummary(skip=1000, cap=100)
+        >> summary = MCMCSummary(skip=1000, cap=100)
 
         # Can be used either as an independent object...
         >> for h in lot_iter(mh_sampler):
